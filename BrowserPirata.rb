@@ -27,6 +27,7 @@ attr_accessor :url, :doc
   def title
     # source = Net::HTTP.get(@url, '/index.html')
     @doc.search("title").inner_text
+  
   end
 end
 
